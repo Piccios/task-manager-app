@@ -7,3 +7,4 @@ Route::get('/tasks', [TaskController::class, 'index']); // 👈 GET
 Route::post('/tasks', [TaskController::class, 'store']); // 👈 POST
 Route::get('/statuses', function () {
     return Status::all();}); // 👈 GET
+Route::patch('/tasks/{task}', [TaskController::class, 'update']); // 👈 PATCH
