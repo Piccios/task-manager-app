@@ -25,65 +25,68 @@ A full-stack task management application developed using **Laravel (RESTful API)
 2. Install dependencies:
    ```bash
    composer install
+   ```
+3. Create the `.env` file and configure your DB credentials
+4. Run migrations and seed the database:
+   ```bash
+   php artisan migrate --seed
+   ```
+5. Start the Laravel development server:
+   ```bash
+   php artisan serve
+   ```
 
-    Create the .env file and configure your DB credentials
+### Frontend (React)
+1. Navigate to the `frontend` directory
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-    Run migrations and seed the database:
 
-php artisan migrate --seed
+## 📁 Folder Structure
 
-Start the Laravel development server:
-
-    php artisan serve
-
-Frontend (React)
-
-    Navigate to the frontend directory
-
-    Install dependencies:
-
-npm install
-
-Start the development server:
-
-    npm run dev
-
-📁 Folder Structure
-
+```
 ├── backend (Laravel)
 ├── frontend (React)
 │   ├── components/
 │   ├── App.jsx
 │   └── ...
+```
 
-🎯 Learning Goals
+## 🎯 Learning Goals
 
 Throughout the development of this project, I focused on learning and strengthening:
 
-    How to use Laravel for building RESTful APIs
+- How to use **Laravel** for building RESTful APIs
+- Managing **migrations, relationships, and seeders** in a relational DB
+- Building **reactive and composable components with React**
+- Styling with **TailwindCSS** for modern, clean, and mobile-first design
+- Separating **frontend and backend logic** clearly
+- Working with `fetch`, `useState`, and `useEffect` to manage async data
+- Writing **clean, scalable, and maintainable code**
 
-    Managing migrations, relationships, and seeders in a relational DB
+## 🔮 Future Improvements
 
-    Building reactive and composable components with React
+- Ability to **update task status** using `PATCH` requests
+- Functionality to **delete tasks**
+- Add **due dates**, **descriptions**, or **tags** to tasks
+- Improve accessibility and user experience
+- Add **user authentication** with Laravel Sanctum
+- Deploy the app (Vercel for frontend + Laravel Forge / Render / Railway for backend)
 
-    Styling with TailwindCSS for modern, clean, and mobile-first design
+---
 
-    Separating frontend and backend logic clearly
+## 📚 About this Project
 
-    Working with fetch, useState, and useEffect to manage async data
+This is a personal learning project to deepen my full-stack development skills.  
+I’m documenting my journey by sharing progress every day on LinkedIn.
 
-    Writing clean, scalable, and maintainable code
+## 📇 Contact
 
-🔮 Future Improvements
-
-    Ability to update task status using PATCH requests
-
-    Functionality to delete tasks
-
-    Add due dates, descriptions, or tags to tasks
-
-    Improve accessibility and user experience
-
-    Add user authentication with Laravel Sanctum
-
-    Deploy the app (Vercel for frontend + Laravel Forge / Render / Railway for backend)
+Developed by [Lorenzo Picchi](https://www.linkedin.com/in/lorenzopicchi/)  
+[GitHub](https://github.com/Piccios)
