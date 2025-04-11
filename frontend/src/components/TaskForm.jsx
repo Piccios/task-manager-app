@@ -45,7 +45,7 @@ export default function TaskForm({ onTaskAdded }) {
 
     return (
         <form onSubmit={handleSubmit} className="mb-6 w-full max-w-md">
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+            <div className="flex gap-2 sm:flex-row sm:items-center">
                 <input
                     type="text"
                     value={title}
