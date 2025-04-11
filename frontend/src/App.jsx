@@ -51,8 +51,8 @@ useEffect(() => {
     setTasks((prev) => [newTask, ...prev]);
   };
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-    <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-xl">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="bg-white shadow-lg rounded-2xl p-6 max-w-xl justify-center items-center">
       <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">Task Manager 👋</h1>
       <TaskForm onTaskAdded={handleTaskAdded} />
       <TaskList tasks={tasks} statuses={statuses} onStatusChange={handleStatusChange} />
