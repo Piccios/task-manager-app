@@ -62,12 +62,13 @@ class TaskController extends Controller
     public function update(Request $request, Task $task)
     {
         $request->validate([
-            'status_id' => 'required|exists:status,id',
+            'status_id' => 'required|exists:statuses,id',
         ]);
 
         $task->update([
             'status_id' => $request->status_id,
         ]);
+
         return response()->json($task->load('status'), 200);
     }
 
