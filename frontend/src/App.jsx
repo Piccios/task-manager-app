@@ -38,9 +38,11 @@ useEffect(() => {
         setTasks((prev) =>
           prev.map((t) => (t.id === taskId ? updatedTask : t))
         );
+      } else {
+        console.error("Errore PATCH:", res.status);
       }
     } catch (error) {
-      console.error("Errore durante l'aggiornamento dello status:", error);
+      console.error("Errore durante PATCH:", error);
     }
   };
   
@@ -49,11 +51,13 @@ useEffect(() => {
     setTasks((prev) => [newTask, ...prev]);
   };
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-start pt-10">
-      <h1 className="text-4xl font-bold text-blue-600 mb-6">Task Manager 👋</h1>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-xl">
+      <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">Task Manager 👋</h1>
       <TaskForm onTaskAdded={handleTaskAdded} />
       <TaskList tasks={tasks} statuses={statuses} onStatusChange={handleStatusChange} />
     </div>
+  </div>
   );
 }
 
