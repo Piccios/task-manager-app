@@ -18,11 +18,12 @@ export default function TaskList({
     return (
         <div className="p-4 w-full max-w-md">
             <h2 className="text-2xl font-bold mb-4">I miei Task</h2>
+            
             <ul className="space-y-2">
                 {tasks.map((task) => (
                     <li
                         key={task.id}
-                        className="bg-white shadow p-3 rounded flex justify-between items-center"
+                        className="bg-white shadow p-3 rounded flex justify-between items-center text-black"
                     >
                         <div>
                             <span

@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+body {
+  background: #f0f0f0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
